@@ -7,11 +7,20 @@ public class SelectionSort {
                     minIndex = j;
                 }
             }
-            if (minIndex != i){
-                int tmp =  arr[i];
+            if (minIndex != i) {
+                int tmp = arr[i];
                 arr[i] = arr[minIndex];
                 arr[minIndex] = tmp;
             }
+        }
+    }
+
+    public static void main(String[] args) {
+        int[] myArr = {6,9,2,1,5};
+        selectionSort(myArr);
+
+        for (int num : myArr){
+            System.out.print(num+" ");
         }
     }
 }
