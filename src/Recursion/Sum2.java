@@ -6,6 +6,9 @@ public class Sum2 {
             return 0;
         } else {
             return arr[index] + Sum(arr, index + 1 );
+            /* return 1 + Sum(arr, index + 1 );
+            will return array length
+             */
         }
     }
 
